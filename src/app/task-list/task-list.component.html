@@ -1,0 +1,19 @@
+<div class="taskform">
+<form (submit)="addTask()">
+    <input [(ngModel)]="newTask" placeholder="Agregar una nueva tarea"[ngModelOptions]="{standalone: true}">
+    <button type="submit">Agregar</button>
+  </form>
+
+  <ul>
+    <h2>Tareas</h2>
+    <li *ngFor="let task of tasks  let i = index" [attr.id]="'item-' + i" (click)="onItemClick(i)">
+      {{ task }}
+    </li>
+  </ul>
+</div>
+
+  
+
+  
+  
+  

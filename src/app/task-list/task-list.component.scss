@@ -1,0 +1,26 @@
+.taskform{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+}
+
+button{
+  margin-left: 5px;
+ 
+}
+
+ul{
+  list-style: none;
+  border-style: double;
+}
+
+li{
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.done {
+    text-decoration: line-through;
+  }
+  
