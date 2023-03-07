@@ -5,7 +5,7 @@
   </form>
 
   <ul>
-    <h2>Tareas</h2>
+    <h2>Lista de Tareas / To Do List</h2>
     <li *ngFor="let task of tasks  let i = index" [attr.id]="'item-' + i" (click)="onItemClick(i)">
       {{ task }}
     </li>
