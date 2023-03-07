@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TaskService } from '../task.service';
+import { TaskService } from '../services/task.service';
 
 @Component({
   selector: 'app-task-list',
@@ -33,6 +33,10 @@ export class TaskListComponent {
     if (itemElement) {
       itemElement.classList.add('done');
     }
+  }
+
+  deleteTask(index: number) {
+    this.tasks.splice(index, 1);
   }
   
   
